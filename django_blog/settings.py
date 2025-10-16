@@ -7,13 +7,16 @@ SECRET_KEY = 'django-insecure-temporary-key-for-development-123456'
 
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    '127.0.0.1', 
-    'localhost', 
-    'django-blog-1s.herokuapp.com',
-    '.herokuapp.com'
-]
 
+
+
+
+ALLOWED_HOSTS = [
+    'django-blog-1s-d1c40ed37816.herokuapp.com',
+    '.herokuapp.com',  # allows all herokuapp.com subdomains
+    'localhost',
+    '127.0.0.1',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
