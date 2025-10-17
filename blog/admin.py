@@ -1,7 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post  # Remove Comment if it doesn't exist
 
-# Register your models here.
 admin.site.register(Post)
-admin.site.register(Comment)
-
+# Remove this line if Comment doesn't exist: admin.site.register(Comment)
